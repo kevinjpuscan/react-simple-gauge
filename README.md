@@ -15,12 +15,12 @@ npm install --save react-simple-gauge
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-simple-gauge'
+import {SimpleGauge} from 'react-simple-gauge'
 import 'react-simple-gauge/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <SimpleGauge percent="75"/>
   }
 }
 ```

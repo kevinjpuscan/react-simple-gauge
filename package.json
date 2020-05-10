@@ -2,9 +2,20 @@
   "name": "react-simple-gauge",
   "version": "1.0.0",
   "description": "Made with create-react-library",
-  "author": "kevinjpuscan",
+  "author": "Kevin Puscán Ortiz <kevinjpuscan@gmail.com>",
   "license": "MIT",
-  "repository": "kevinjpuscan/react-simple-gauge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinjpuscan/react-simple-gauge.git"
+  },
+  "keywords": [
+    "[\"gauge\"",
+    "\"chart\"",
+    "\"progress\"",
+    "\"circular\"",
+    "\"simple\"",
+    "\"react\"]"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -49,5 +60,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/kevinjpuscan/react-simple-gauge/issues"
+  },
+  "homepage": "https://github.com/kevinjpuscan/react-simple-gauge#readme"
 }
