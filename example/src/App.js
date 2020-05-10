@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-simple-gauge'
-import 'react-simple-gauge/dist/index.css'
+import { SimpleGauge } from 'react-simple-gauge'
+
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <SimpleGauge width="250px"/>
 }
 
 export default App
