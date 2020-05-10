@@ -1,0 +1,6 @@
+.github
+.eslintignore
+.eslintrc
+.gitignore
+example
+src
