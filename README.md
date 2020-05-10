@@ -1,8 +1,8 @@
 # react-simple-gauge
 
-> Made with create-react-library
-
 [![NPM](https://img.shields.io/npm/v/react-simple-gauge.svg)](https://www.npmjs.com/package/react-simple-gauge) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+<img src="./.github/gauge.png" alt="demo" height="100">
 
 ## Install
 
@@ -16,7 +16,6 @@ npm install --save react-simple-gauge
 import React, { Component } from 'react'
 
 import {SimpleGauge} from 'react-simple-gauge'
-import 'react-simple-gauge/dist/index.css'
 
 class Example extends Component {
   render() {

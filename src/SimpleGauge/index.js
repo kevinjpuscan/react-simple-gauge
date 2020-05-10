@@ -77,10 +77,10 @@ class SimpleGauge extends React.Component{
 		let text=this.text.current;
 		text.style.fontSize=`${height/3}px`;
 		text.style.fontWeight='bold';
-		text.style.position='absolute';
-		text.style.top=`${height*2/3}px`;
-		text.style.left=`${(width-text.clientWidth)/2}px`;
+		text.style.marginTop=`-${height/2}px`;
 		text.style.color='#5BB030';
+		text.style.display='grid';
+		text.style.justifyContent='center';
 		
     }    
     render(){
@@ -91,7 +91,7 @@ class SimpleGauge extends React.Component{
 					<circle ref={this.progress}></circle>
 					<circle ref={this.point}></circle>
 				</svg>	
-				<span className="number" ref={this.text}>{this.props.percent?this.props.percent:100}%</span>
+				<div className="number" ref={this.text}>{this.props.percent?this.props.percent:100}%</div>
 			</div>
         );
     }

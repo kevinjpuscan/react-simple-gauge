@@ -4,7 +4,11 @@ import { SimpleGauge } from 'react-simple-gauge'
 
 
 const App = () => {
-  return <SimpleGauge width="250px"/>
+  return (<div style={{margin:'10px'}}>
+          
+        <SimpleGauge width="250px" percent="75"/>
+  </div>
+  )
 }
 
 export default App
