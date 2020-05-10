@@ -7,7 +7,7 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
-    "react-simple-gauge": "file:.."
+    "react-simple-gauges": "file:.."
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",

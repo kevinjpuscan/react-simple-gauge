@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SimpleGauge } from 'react-simple-gauge'
+import { SimpleGauge } from 'react-simple-gauges'
 
 
 const App = () => {

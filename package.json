@@ -1,7 +1,7 @@
 {
   "name": "react-simple-gauges",
-  "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "version": "1.0.1",
+  "description": "A simple gauge charts for react",
   "author": "Kevin Puscán Ortiz <kevinjpuscan@gmail.com>",
   "license": "MIT",
   "repository": {
