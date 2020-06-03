@@ -10,7 +10,17 @@ class SimpleGauge extends React.Component{
     }
     componentDidMount(){
 
-		const percent=this.props.percent?this.props.percent:100;
+		const percent=this.props.percent?this.props.percent>=0?this.props.percent<=100?this.props.percent:100:0:100;
+		let color=this.props.color||'#5BB030';
+		if(this.props.intervals && this.props.colors){
+			let startValue=0;
+			this.props.intervals.forEach((element,idx) => {
+				if(percent>=startValue && percent<element){
+					color=this.props.colors[idx]||color;
+				}
+				startValue=element;
+			});
+		}
 
 		let container=this.container.current;
 		const width=container.clientWidth;
@@ -51,7 +61,7 @@ class SimpleGauge extends React.Component{
             circle.style.strokeDashoffset=offset;
 			circle.style.strokeWidth=strokeWidth.toString();
             circle.style.transform=`translate(${strokeWidth/2}px,${strokeWidth/2}px)`;
-        
+ 
 		circle=this.point.current;
 			circle.style.width='100%';
 			circle.style.height='100%';
@@ -66,7 +76,9 @@ class SimpleGauge extends React.Component{
 
 
 		let progress=this.progress.current;
-		progress.style.stroke='#5BB030';
+		progress.style.stroke=color;
+
+		
 		progress.style.strokeDasharray=`${bar} ${offsetBar}`;
 
 		let point=this.point.current;
@@ -78,7 +90,7 @@ class SimpleGauge extends React.Component{
 		text.style.fontSize=`${height/3}px`;
 		text.style.fontWeight='bold';
 		text.style.marginTop=`-${height/2}px`;
-		text.style.color='#5BB030';
+		text.style.color=color;
 		text.style.display='grid';
 		text.style.justifyContent='center';
 		
@@ -91,7 +103,7 @@ class SimpleGauge extends React.Component{
 					<circle ref={this.progress}></circle>
 					<circle ref={this.point}></circle>
 				</svg>	
-				<div className="number" ref={this.text}>{this.props.percent?this.props.percent:100}%</div>
+				<div className="number" ref={this.text}>{this.props.percent?this.props.percent>=0?this.props.percent<=100?this.props.percent:100:0:100}%</div>
 			</div>
         );
     }
