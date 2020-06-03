@@ -29,8 +29,8 @@ class Example extends Component {
 | Option | type | Description | Example | 
 |--|--|--|--|
 | percent | required | Percent of progress in gauge | 75 |
-| color | optional | Color if not define interval of colors | #FFFFFF, red, rgba(255,243,12,.5) |
-| intervals | optional | Intervales values for define color,value in [min,max> | [60,75,101] |
+| color | optional | Color if not define intervals of colors | #FFFFFF, red, rgba(255,243,12,.5) |
+| intervals | optional | Intervals values for define color, value in [min,max> | [60,75,101] |
 | colors | optional | Array of colors for intervals values | ['green','grba(255,255,40,.5)','#d73a49'] |
 ## License
 
