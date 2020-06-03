@@ -43,7 +43,7 @@ class SimpleGauge extends React.Component{
 			circle.style.width='100%';
 			circle.style.height='100%';
 			circle.style.fill='none';
-			circle.style.stroke='#E5E5E5';	
+			circle.style.stroke=this.props.colorDefault||'#E5E5E5';	
 			circle.style.strokeLinecap='round';
 			circle.setAttribute('cx',ratio);
 			circle.setAttribute('cy',ratio);
