@@ -1,5 +1,5 @@
 # DEPRECATED.!!!
-Te recomendamos utilizar la librería [react-gauges](https://www.npmjs.com/package/react-gauges)
+We recommend using the react-gauges library [react-gauges](https://www.npmjs.com/package/react-gauges)
 
 
 # react-simple-gauge
