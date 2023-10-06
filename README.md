@@ -1,8 +1,10 @@
+
+
 # DEPRECATED.!!!
 We recommend using the react-gauges library [react-gauges](https://www.npmjs.com/package/react-gauges)
 
 
-# react-simple-gauge
+# react-simple-gauge [DEPRECATED]
 
 [![NPM](https://img.shields.io/npm/v/react-simple-gauges.svg)](https://www.npmjs.com/package/react-simple-gauges) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -30,7 +32,7 @@ class Example extends Component {
 
 ## Options
 
-| Option | type | Description | Example | 
+| Option | type | Description | Example |
 |--|--|--|--|
 | percent | required | Percent of progress in gauge | 75 |
 | color | optional | Color if not define intervals of colors | #FFFFFF, red, rgba(255,243,12,.5) |
